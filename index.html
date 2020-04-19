@@ -5,91 +5,435 @@
     <title>Vedha</title>
     </script>
     <style>
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			background-color:#212121; 
+			color:#dbdbdb;
+		}
+		#background_img {
+			/*background-image:url("bg2.jpg");
+			background-repeat: no-repeat;	
+			background-position:center;	
+			background-attachment:fixed;
+			opacity: 0.3;
+			color:#dbdbdb;
+			*/
+			
+			height:100%;
+			width:100%;
+			display:block-inline;
+			position:fixed;
+			top: 0px;
+			left: 0px;
+			right:0px;
+			bottom:0px;
+			z-index: -1;
+			opacity: 0.7;
+					
+		}
+		#header {
+			text-align:center;
+			padding:30px;
+			background-color:#212121; 
+			color:#dbdbdb;
+		}
+		#header h1{
+			font-size:40px;
+		}
+		
+		#personal_details {
+			width: 90%;
+			background-color: #fffa4d;/*#d4cf37;/* #37ccd4; *//*#37d4b1; */
+			color: #212121;
+			margin: 0px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			height:365px;
+			border:1px solid #a8b32d;/*#2db395;
+			/*box-shadow: 5px 7px 8px #6e6e6e;*/
+		}
+		#photo {
+			background-color:white;
+			width:20%;
+			height:100%;
+			float:left;
+			text-align:center;
+			padding-right:30px;
+		}
+		#img {
+			height:365px;
+		}
+		button {
+			/*background-color: #d4cf37;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px
+			cursor: pointer;*/
+			
+			font-weight: bold;
+			background-color: #fffa4d;
+			position: absolute;
+			top: 82%;
+			left: 10%;
+			/*transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			font-size: 16px;
+			border: none;
+			display: inline-block;
+			margin: 4px 2px
+			padding: 12px 24px;
+			cursor: pointer;*/
+			
+			background-color: #d4cf37;
+			border: none;
+			color: #212121;
+			padding: 12px 24px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px
+			cursor: pointer;
+			
+			border-radius: 5px;
+		}
+		#para {
+			width:75%;
+			height:350px;
+			margin:0px;
+			float:left;
+			padding-left: 25px;
+			padding-top:50px;
+			padding-bottom:50px;
+		}
+		
+		#work_experience {
+			/*background-color:white;
+			
+			margin: 0px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			width:90%;
+			margin: 0px;
+			display: block;
+			*/
+			
+			width: 85.2%;
+			margin: 0px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 15px 32px;
+
+		}
+		#work_experience h2 {
+			text-align:center;
+			border:2px solid;
+			width:250px;
+			padding:18px;
+			margin-left:480px;
+			margin-bottom:50px;
+			text-weight: bold;
+		}
+
+		#edu {
+			padding: 50px 0px 0px 60px;
+			margin: 0px;
+			display: block;
+			width: 85.2%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 15px 32px;
+		}
+		#edu h2 {
+			text-align:center;
+			border:2px solid;
+			text-weight: bold;
+			width:150px;
+			padding:18px;
+			margin-left:520px;
+			margin-bottom:50px;
+		}
+		
+		#leadership {
+			padding: 50px 0px 0px 60px;
+			margin: 0px;
+			display: block;
+			width: 85.2%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 15px 32px;
+		}
+		#leadership h2 {
+			text-align:center;
+			border:2px solid;
+			text-weight: bold;
+			width:320px;
+			padding:18px;
+			margin-left:435px;
+			margin-bottom:50px;
+		}
+		
+		#skills {
+			padding: 50px 0px 0px 60px;
+			margin: 0px;
+			display: block;
+			width: 85.2%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 15px 32px;
+		}
+		#skills h2 {
+			text-align:center;
+			border:2px solid;
+			text-weight: bold;
+			width: 60px;
+			padding:18px;
+			margin-left:560px;
+			margin-bottom:50px;
+		}
+		
+		#other {
+			padding: 50px 0px 0px 60px;
+			margin: 0px;
+			display: block;
+			width: 85.2%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 15px 32px;
+		}
+		#other h2 {
+			text-align:center;
+			border:2px solid;
+			text-weight: bold;
+			width:265px;
+			padding:18px;
+			margin-left:460px;
+			margin-bottom:50px;
+		}
     </style>
 </head>
 <body>
-	<table style="width:100%; border: 0px solid black; ">
-	  <tr>
-		<td style="width:30%; text-align:center; background-color:#212121; color:#dbdbdb;">
-			<h1>Vedha Krishna Velthapu</h1>
-			<h4>3rd year Computer Science Student</h4>
-			<br><br><br>
-			<table style="width:100%;">
-			  <tr style="margin-bottom:2px">
-				<td style="width:30%; font-weight:bold">Email</td>
-				<td>u18020624@tuks.co.za</td>
-				<td><br></td>
-			  </tr>
-			  <tr style="padding-bottom:2px">
-				<td style="width:30%; font-weight:bold">Cell phone</td>
-				<td>0679139160</td>
-				<td><br></td>
-			  </tr>
-			  <tr style="padding-bottom:2px">
-				<td style="width:30%; font-weight:bold;">Date of Birth</td>
-				<td>1 November 1998</td>
-				<td><br></td>
-			  </tr>
-			</table>
-		</td>
-		<td style="">
-			<table style="width:100%; padding:15px;">
-			  <tr>
-				
-			  </tr>
-			  <tr>
-				<td style="border: 0px solid black;">
-					<h2>Education</h2>
-					<ul style="list-style-type:circle;">
-						<li>Currently(3rd year) – Bachelor of Science (BsC) in  Computer Science</li>
-						<li>National Senior Certificate, Sutherland High School (2017)</li>
-					</ul>
-				</td>
-			  </tr>
-			  <tr>
-				<td style="border: 0px solid black;">
-					<h2>Current Position</h2>
-					<ul style="list-style-type:circle;">
-						<li>Tutoring COS 216</li>
-					</ul>
-				</td>
-			  </tr>
-			  <tr>
-				<td style="border: 0px solid black;">
-					<h2>Skills</h2>
-					<ul style="list-style-type:circle;">
-					  <li>HTML 5</li>
-					  <li>CSS 3</li>
-					  <li>JavaScript</li>
-					  <li>PHP</li>
-					  <li>jQuery</li>
-					  <li>Java</li>
-					  <li>C++</li>
-					  <li>Assembly</li>
-					</ul>
-				</td>
-			  </tr>
-			  <tr>
-				<td style="border: 0px solid black;">
-					<h2>Attitudes</h2>
-					<ul style="list-style-type:circle;">
-					  <li>Open-minded</li>
-					  <li>Enthusiastic </li>
-					  <li>Confident</li>
-					</ul>
-				</td>
-			  </tr>
-			  <tr>
-				<td style="border: 0px solid black;">
-					<h2>Interests</h2>
-					<ul style="list-style-type:circle;">
-					  <li>Yoga</li>
-					  <li>Dance</li>
-					</ul>
-				</td>
-			  </tr>
-			</table>
-		</td>
-	</table>
+	<img src="bg2.jpg" id="background_img"/>
+	<div>
+		<div id="header">
+			<h1>Vedha Krishna Velthapu </h1>
+			<h3>3rd year Computer Science Student</h3>
+			<h3>Curriculum Vitae</h3>
+		</div>
+	
+		<div id="personal_details">
+			<div id="photo">
+				<img id="img" src="vedha.jpg" alt="image"/>
+				<br>
+				<br>
+				<button>
+					Download cv
+				</button>
+			</div>
+			<div id="para">
+				<p>
+				I am a third year Computer Science student at University of Pretoria. I am an optimistic and self-motivated student, with a practical approach to problem solving. I am interested in enhancing my career and branching into web and mobile application development, and AI. My goal is to complete my Master’s degree in Computer Science with my majors in Computer and Information security, Artificial Intelligence and Data Science.
+				</p>
+				<br>
+				<div id="details">
+					<h4 style="display:inline;">Email:</h4>
+					<h4 style="display:inline; font-weight:normal;">&nbsp;&nbsp;&nbsp;&nbsp; u18020624@tuks.co.za</h4>
+					<br>
+					<br>
+					<h4 style="display:inline;">Date of Birth:</h4>
+					<h4 style="display:inline; font-weight:normal;">&nbsp;&nbsp;&nbsp;&nbsp; 1 November 1998</h4>
+					<br>
+					<br>
+					<h4 style="display:inline;">Degree:</h4>
+					<h4 style="display:inline; font-weight:normal;">&nbsp;&nbsp;&nbsp;&nbsp; BSc Computer Science</h4>
+					<br>
+					<br>
+					<h4 style="display:inline;">Institute:</h4>
+					<h4 style="display:inline; font-weight:normal;">&nbsp;&nbsp;&nbsp;&nbsp; University Of Pretoria</h4>
+					<br>
+					<br>
+					<h4 style="display:inline;">Position:</h4>
+					<h4 style="display:inline; font-weight:normal;">&nbsp;&nbsp;&nbsp;&nbsp; Omega Converter Team</h4>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="work_experience">
+			<h2>WORK EXPERIENCE</h2>
+			<h4 style="color:#fffa4d;">Teaching Assistant for Netcentric Computer Systems (COS 216):</h4>
+			<h4 style="display:inline;">Reference:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				asingh@cs.up.ac.za
+			</h4>
+			<br>
+			<br>
+			<h4 style="display:inline;">Date:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				Feburary 2020 - present
+			</h4>
+			<br>
+			<br>
+			<h4 style="display:inline;">Job roles:</h4>	<br>
+			<ul>
+				<li>Marking student practicals.</li>
+				<li>Assisting students with practical assignments and any module related work during practical sessions.</li>
+			</ul>
+			<br/>
+		</div>
+		<div id="edu">
+			<h2>EDUCATION</h2>
+			<h4 style="color:#fffa4d;">Bachelor of Science (BsC) in  Computer Science:</h4>
+			<h4 style="display:inline;">Current year:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				3rd year
+			</h4>
+			<br>
+			<br>
+			<h4 style="display:inline;">Date:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				Feburary 2018 - current
+			</h4>
+			<br>
+			<br>
+			<h4 style="display:inline;">Institution:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				University Of Pretoria
+			</h4>
+			
+			<br>		
+			<br>			
+			<h4 style="color:#fffa4d;">National Senior Certificate:</h4>
+			<h4 style="display:inline;">Date:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				January 2013 - December 2017
+			</h4>
+			<br/>
+			<br/>
+			<h4 style="display:inline;">Institution:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				Sutherland High School
+			</h4>
+			<br>
+			<br>
+		</div>
+		<!--<div id="pojects">
+			<h2>PREVIOUS WORK</h2>
+			<h4 style="display:inline;">Kalam Solutions (Developed website)</h4>
+			<br><br>
+			<h5 style="display:inline;">Website:</h5>
+			<h5 style="display:inline; font-weight:normal;"><a href="http://kalamsolutions.co.za/">www.kalamsolutions.co.za</a></h5>
+			<br>
+		</div>-->
+		<div id="leadership">
+			<h2>LEADERSHIP EXPERIENCE</h2>
+			<h4 style="color:#fffa4d;">Cum Laude Honours for Leadership:</h4>
+			<h4 style="display:inline;">Date:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				Feburary 2017
+			</h4>
+			<br>
+			<br>
+			<h4 style="display:inline;">Description:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				Feburary 2017
+			</h4>
+			<br>
+			<br>
+			<h4 style="display:inline;">Institution:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				Sutherland High School
+			</h4>
+			<!------>
+			<br/>
+			<br/>
+			<h4 style="color:#fffa4d;">Twelve months mentorship of junior learners:</h4>
+			<h4 style="display:inline;">Date:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				January 2016 - December 2016
+			</h4>
+			<br/>
+			<br/>
+			<h4 style="display:inline;">Description:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				Mentored junior learner for 12 months in Sutherland High School
+			</h4>
+			<br>
+			<br>
+			<h4 style="display:inline;">Institution:</h4>
+			<h4 style="display:inline; font-weight:normal;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				Sutherland High School
+			</h4>
+			<br>
+			<!------>
+		</div>
+	
+		<div id="skills">
+			<h2>Skills</h2>
+			<h4 style="color:#fffa4d;" style="display:inline; ">Web designing languages:</h4> 
+			<ul>
+				<li>HTML 5, CSS 3, Bootstrap</li>
+				<li>JavaScript</li>
+				<li>PHP</li>
+				<li>jQuery</li>
+			</ul>
+			<br/>
+			
+			<h4 style="color:#fffa4d;" style="display:inline; ">Programming languages:</h4> 
+			<ul>
+				<li>Java</li>
+				<li>C++</li>
+				<li>Assembly</li>
+				<li>Python</li>
+			</ul>
+			<br/>
+			
+			<h4 style="color:#fffa4d;" style="display:inline; ">Relational Database Management System:</h4> 
+			<ul>
+				<li>MySQL</li>
+			</ul>
+		</div>
+		<div id="other">
+			<h2>Attitudes and Interests</h2>
+			<h4 style="color:#fffa4d;" style="display:inline; ">Attitudes:</h4> 
+			<ul>
+				<li>Open-minded</li>
+				<li>Enthusiastic</li>
+				<li>Confident</li>
+			</ul>
+			<br>
+			
+			<h4 style="color:#fffa4d;" style="display:inline; ">Interests:</h4> 
+			<ul>
+				<li>Dance</li>
+				<li>Yoga</li>
+			</ul>
+			
+		</div>
+	</div>
+
 </body>
 </html>
